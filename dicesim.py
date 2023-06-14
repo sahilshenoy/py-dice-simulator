@@ -6,12 +6,10 @@ while ch:
     no_die = int(input("Enter the number of die's: "))
     random_numbers = []
 
-    def random_number(no):
-        for i in range(0, no):
-            new_random_no = randrange(1, 7)
-            random_numbers.append(new_random_no)
+    for i in range(0, no_die):
+        new_random_no = randrange(1, 7)
+        random_numbers.append(new_random_no)
 
-    random_number(no_die)
 
     for i in random_numbers:
         if i == 1:
